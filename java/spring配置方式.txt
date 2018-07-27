@@ -1,0 +1,26 @@
+1.XML配置文件
+
+<bean id="  " class="  " scope="property">
+    <property name ="  " ref="  "/>
+    <property name ="  " ref="  "/>
+</bean>
+
+2.基于注解配置
+
+@Scope("property")
+@Lazy(true)
+@Component("bean名称")
+public class xxx{
+
+}
+
+3.java类配置
+
+@Configuration
+public class xxx{
+    @Scope("property")
+	@Bean("名称")
+	public xxx(){
+	
+	}
+}

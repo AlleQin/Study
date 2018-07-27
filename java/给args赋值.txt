@@ -1,0 +1,9 @@
+
+ args[] 数组       //存放应用程序参数,不能人为赋值
+ 
+ 赋值方法： 1. 编译时赋值
+               javac xxx.java   //编译成class文件
+			   java xxx [参数]  //执行class文件，传递args参数
+			   
+			2. 开发工具赋值
+			   例如：eclipse --> run as --> argument 项赋值

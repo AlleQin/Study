@@ -1,0 +1,23 @@
+
+//单通信示例，服务器接收客户机发送的消息
+
+/*
+ *服务器端主要代码
+ */
+server = new ServerSocket(port);     //创建套接字端口号
+//等待客户端连接
+socket = server.accept();
+reader = new BufferedReader(new InputStreamReader(socket.getInputStream())) //reader接收来自客户端的信息流
+
+getClientMessage();    //自定义方法显示客户端消息
+   
+   
+/*
+ *客户端主要代码
+ */
+ //printWriter.println(信息)   //printWriter获得信息内容
+ 
+ socket = new Socket(host,port);
+ printWriter = new PrintWriter(socket.getOutputStream(),true);  //客户端信息流
+ 
+ 
